@@ -1,6 +1,16 @@
 # wubi86_double_key
 rime 手机输入法（trime 同文输入法），配置仿触宝 T+ 键盘的，五笔 86 双键输入方案。
 
+
+--------------------------------------------
+
+Fork 自下边的仓库，将尝试按自己需要修改；
+
+> boboIqiqi/wubi86\_double\_key: rime 手机输入法（trime 同文输入法），配置仿触宝 T+ 键盘的，五笔 86 双键输入方案。
+>
+> [https://github.com/boboIqiqi/wubi86_double_key](https://github.com/boboIqiqi/wubi86_double_key "boboIqiqi/wubi86\_double\_key: rime 手机输入法（trime 同文输入法），配置仿触宝 T+ 键盘的，五笔 86 双键输入方案。")
+
+
 ## 使用说明
 - 下载仓库中所有文件
 - 连上手机
