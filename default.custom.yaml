@@ -6,7 +6,7 @@ customization:
   rime_version: 1.2.9
 patch:
   schema_list:
-    - {schema: wubi86}
+    # - {schema: wubi86}
     - {schema: wubi86_double_key}
   key_binder:
     bindings:

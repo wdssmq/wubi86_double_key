@@ -1,6 +1,6 @@
 # trime.custom.yaml
 patch:
-# 1、新建一個按鍵佈局 wubi86_double_key
+  # 新建一個按鍵佈局 wubi86_double_key
   "preset_keyboards/wubi86_double_key":  # 佈局 ID
     author: "boboIqiqi"   # 作者
     name: "五笔双键"  # 方便自己辨識的名字
@@ -32,32 +32,16 @@ patch:
 
       # 第四行
       - {click: Keyboard_symbols, width: 15}
-      - {click: Keyboard_qwerty, long_click: Menu, width: 10}
+      - {click: Keyboard_qwerty, width: 10}
       - {label: "，", click: comma , width: 10}
       - {label: " " , click: space, long_click: VOICE_ASSIST, width: 30} 
       - {label: "。", click: period , width: 10}
       - {label: "123", click: Keyboard_number, width: 10}
       - {label: "确定", click: Return, width: 15}
 
-  "style/keyboards":
-    - .default
-    - default
-    - number
-    - symbols
-    - qwerty
 
-  "preset_keyboards/qwerty/ascii_mode": 1
-
-  "style/candidate_view_height": 36
-  "style/round_corner": 0.0
-  "style/label_text_size": 18
-  "style/comment_height": 14
-  "preset_keys/Keyboard_qwerty":   #
+  # 按键功能定义
+  "preset_keys/Keyboard_qwerty":   # 切换至英文
       label: 英
       select: qwerty
       send: Eisu_toggle
-  "preset_keys/space":
-    functional: false
-    label: " "
-    repeatable: false  # 关掉空格键重复
-    send: space
