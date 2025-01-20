@@ -1,12 +1,12 @@
 # trime.custom.yaml
 patch:
-# 1、新建一個按鍵佈局wubi86_double_key
-  "preset_keyboards/wubi86_double_key":  # 佈局ID
+# 1、新建一個按鍵佈局 wubi86_double_key
+  "preset_keyboards/wubi86_double_key":  # 佈局 ID
     author: "boboIqiqi"   # 作者
     name: "五笔双键"  # 方便自己辨識的名字
     ascii_mode: 0 # 默認進入中文狀態
     height: 60   # 每行高度
-    width: 20   # 按鍵默認寬度（取所有按鍵中用得較多的寬度值，接下來就可以少寫一些width了）  
+    width: 20   # 按鍵默認寬度（取所有按鍵中用得較多的寬度值，接下來就可以少寫一些 width了）  
     keys:   # 按鍵排列
       # 第一行
       - {label: "Q W", click: q, long_click: 1}
