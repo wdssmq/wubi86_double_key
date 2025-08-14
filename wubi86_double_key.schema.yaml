@@ -4,12 +4,12 @@
 
 schema:
   schema_id: wubi86_double_key
-  name: "五笔86双键版"
+  name: "五笔 86 双键版"
   version: "0.12"
   author:
     - 發明人 王永民先生
   description: |
-    五筆字型86版
+    五筆字型 86 版
     碼表源自 ibus-table
     請安裝【袖珍簡化字拼音】以啓用 z 鍵拼音反查
 
