@@ -1,52 +1,51 @@
 # trime.custom.yaml
 patch:
   # 新建一個按鍵佈局 wubi86_double_key
-  "preset_keyboards/wubi86_double_key":  # 佈局 ID
-    author: "boboIqiqi"   # 作者
-    name: "五笔双键"  # 方便自己辨識的名字
+  "preset_keyboards/wubi86_double_key": # 佈局 ID
+    author: "boboIqiqi" # 作者
+    name: "五笔双键" # 方便自己辨識的名字
     ascii_mode: 0 # 默認進入中文狀態
-    height: 60   # 每行高度
-    width: 20   # 按鍵默認寬度（取所有按鍵中用得較多的寬度值，接下來就可以少寫一些 width了）  
-    keys:   # 按鍵排列
+    height: 60 # 每行高度
+    width: 20 # 按鍵默認寬度（取所有按鍵中用得較多的寬度值，接下來就可以少寫一些 width了）
+    keys: # 按鍵排列
       # 第一行
-      - {label: "Q W", click: q, long_click: 1}
-      - {label: "E R", click: e, long_click: 2}
-      - {label: "T Y", click: t, long_click: 3}
-      - {label: "U I", click: u, long_click: 4}
-      - {label: "O P", click: o, long_click: 5}
+      - { label: "Q W", click: q, long_click: 1 }
+      - { label: "E R", click: e, long_click: 2 }
+      - { label: "T Y", click: t, long_click: 3 }
+      - { label: "U I", click: u, long_click: 4 }
+      - { label: "O P", click: o, long_click: 5 }
 
       # 第二行
-      - {label: "A S", click: a, long_click: 6}
-      - {label: "D F", click: d, long_click: 7}
-      - {label: "G H", click: g, long_click: 8}
-      - {label: "J K", click: j, long_click: 9}
-      - {label: "L"  , click: l, long_click: 0}
+      - { label: "A S", click: a, long_click: 6 }
+      - { label: "D F", click: d, long_click: 7 }
+      - { label: "G H", click: g, long_click: 8 }
+      - { label: "J K", click: j, long_click: 9 }
+      - { label: "L", click: l, long_click: 0 }
 
       # 第三行
-      - {label: "词" , click: Shift_L, width: 10}
-      - {label: "Z"  , click: z, long_click: "@", width: 10}
-      - {label: "X C", click: x, long_click: "!"}
-      - {label: "V B", click: v, long_click: "?"}
-      - {label: "N M", click: n, long_click: "."}
-      - {click: BackSpace}
+      - { label: "词", click: Shift_L, width: 10 }
+      - { label: "Z", click: z, long_click: "@", width: 10 }
+      - { label: "X C", click: x, long_click: "!" }
+      - { label: "V B", click: v, long_click: "?" }
+      - { label: "N M", click: n, long_click: "." }
+      - { click: BackSpace }
 
       # 第四行
-      - {click: Keyboard_qwerty, width: 15}
-      - {click: Keyboard_symbols, width: 10}
-      - {label: "，", click: comma , width: 10}
-      - {label: "五笔 86 双键版" , click: space, width: 30} 
-      - {label: "。", click: period , width: 10}
-      - {label: "123", click: Keyboard_number, width: 10}
-      - {label: "确定", click: Return, width: 15}
-
+      - { click: Keyboard_qwerty, width: 15 }
+      - { click: Keyboard_symbols, width: 10 }
+      - { label: "，", click: comma, width: 10 }
+      - { label: "五笔 86 双键版", click: space, width: 30 }
+      - { label: "。", click: period, width: 10 }
+      - { label: "123", click: Keyboard_number, width: 10 }
+      - { label: "确定", click: Return, width: 15 }
 
   # 按键功能定义
-  "preset_keys/Keyboard_qwerty":   # 切换至英文
-      label: 英
-      select: qwerty
-      send: Eisu_toggle
+  "preset_keys/Keyboard_qwerty": # 切换至英文
+    label: 英
+    select: qwerty
+    send: Eisu_toggle
 
-  "preset_keys/Mode_switch":   # 切换回中文
-      label: 五笔
-      select: wubi86_double_key
-      send: Eisu_toggle
+  "preset_keys/Mode_switch": # 切换回中文
+    label: 五笔
+    select: wubi86_double_key
+    send: Eisu_toggle

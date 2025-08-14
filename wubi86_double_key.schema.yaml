@@ -20,7 +20,7 @@ switches:
   # - name: full_shape
   #   states: [ 半角, 全角 ]
   - name: extended_charset
-    states: [ 通用, 增廣 ]
+    states: [通用, 增廣]
 
 engine:
   processors:
@@ -41,7 +41,7 @@ engine:
   translators:
     - punct_translator
     - reverse_lookup_translator
-#    - table_translator
+    # - table_translator
     - script_translator
 
 speller:
@@ -49,19 +49,19 @@ speller:
   max_code_length: 4
   algebra:
     - derive/w/q/
-    - derive/r/e/ 
-    - derive/y/t/ 
-    - derive/i/u/ 
-    - derive/p/o/ 
+    - derive/r/e/
+    - derive/y/t/
+    - derive/i/u/
+    - derive/p/o/
 
-    - derive/s/a/ 
-    - derive/f/d/ 
-    - derive/h/g/ 
-    - derive/k/j/ 
-    
-    - derive/c/x/ 
-    - derive/b/v/ 
-    - derive/m/n/ 
+    - derive/s/a/
+    - derive/f/d/
+    - derive/h/g/
+    - derive/k/j/
+
+    - derive/c/x/
+    - derive/b/v/
+    - derive/m/n/
 
 translator:
   dictionary: wubi86_double_key
@@ -82,8 +82,8 @@ punctuator:
 
 key_binder:
   bindings:
-    - {accept: comma, send: 2, when: has_menu}
-    - {accept: period, send: 3, when: has_menu}
+    - { accept: comma, send: 2, when: has_menu }
+    - { accept: period, send: 3, when: has_menu }
 
 recognizer:
   import_preset: default
