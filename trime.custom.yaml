@@ -45,3 +45,8 @@ patch:
       label: 英
       select: qwerty
       send: Eisu_toggle
+
+  "preset_keys/Mode_switch":   # 切换回中文
+      label: 五笔
+      select: wubi86_double_key
+      send: Eisu_toggle
