@@ -31,8 +31,8 @@ patch:
       - {click: BackSpace}
 
       # 第四行
-      - {click: Keyboard_qwerty, width: 10}
-      - {click: Keyboard_symbols, width: 15}
+      - {click: Keyboard_qwerty, width: 15}
+      - {click: Keyboard_symbols, width: 10}
       - {label: "，", click: comma , width: 10}
       - {label: " " , click: space, long_click: VOICE_ASSIST, width: 30} 
       - {label: "。", click: period , width: 10}
