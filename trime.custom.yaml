@@ -39,6 +39,9 @@ patch:
       - { label: "123", click: Keyboard_number, width: 10 }
       - { label: "确定", click: Return, width: 15 }
 
+  # 26 键布局仅用于英文输入
+  "preset_keyboards/qwerty/ascii_mode": 1
+
   # 按键功能定义
   "preset_keys/Keyboard_qwerty": # 切换至英文
     label: 英
