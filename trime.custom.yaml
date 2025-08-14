@@ -34,7 +34,7 @@ patch:
       - {click: Keyboard_qwerty, width: 15}
       - {click: Keyboard_symbols, width: 10}
       - {label: "，", click: comma , width: 10}
-      - {label: " " , click: space, long_click: VOICE_ASSIST, width: 30} 
+      - {label: "五笔 86 双键版" , click: space, width: 30} 
       - {label: "。", click: period , width: 10}
       - {label: "123", click: Keyboard_number, width: 10}
       - {label: "确定", click: Return, width: 15}
