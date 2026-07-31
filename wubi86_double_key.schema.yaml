@@ -10,7 +10,7 @@ schema:
     - 發明人 王永民先生
   description: |
     五筆字型 86 版
-    碼表源自 ibus-table
+    碼表源自 KyleBing/rime-wubi86-jidian
     請安裝【袖珍簡化字拼音】以啓用 z 鍵拼音反查
 
 switches:
