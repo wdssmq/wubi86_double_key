@@ -63,3 +63,50 @@ patch:
     label: 五笔
     select: wubi86_double_key
     send: Eisu_toggle
+
+  "preset_keys/Keyboard_editor": # 切换至编辑器
+    label: 编辑
+    select: editor
+    send: Eisu_toggle
+
+  "preset_keys/Mode_switch_2": # 中英文切换
+    states: [ 中, En ]
+    toggle: ascii_mode
+    send: Mode_switch
+
+  tool_bar:
+    button_spacing: 5 # 按钮间距
+
+    hide_button: &hide_button
+      foreground:
+        style: "ic@keyboard_close"
+        normal: candidate_text_color
+      action: Hide
+
+    emoji_button: &emoji_button
+      foreground:
+        style: "ic@emoticon"
+      action: liquid_keyboard_emoji
+
+    clipboard_button: &clipboard_button
+      foreground:
+        style: "ic@clipboard"
+      action: clipboard_window
+
+    edit_button: &edit_button
+      foreground:
+        style: "ic@cursor_text"
+      action: Keyboard_editor
+
+    ascii_mode_button: &ascii_mode_button
+      foreground:
+        option_styles: ["中", "En"]
+      action: Mode_switch_2
+
+    full_shape_button: &full_shape_button
+      foreground:
+        option_styles: ["ic@moon_full", "ic@moon_new"]
+      action: Zenkaku_Hankaku
+
+    # 右侧按钮列表（从右向左排列）
+    buttons: [ *hide_button, *emoji_button, *clipboard_button, *edit_button, *ascii_mode_button, *full_shape_button ]
