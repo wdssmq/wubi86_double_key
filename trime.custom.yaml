@@ -23,7 +23,7 @@ patch:
       - { label: "L", click: l, long_click: 0 }
 
       # 第三行
-      - { label: "词", click: Shift_L, width: 10 }
+      - { click: Keyboard_qwerty_cn, width: 10 }
       - { label: "Z", click: z, long_click: "@", width: 10 }
       - { label: "X C", click: x, long_click: "!" }
       - { label: "V B", click: v, long_click: "?" }
@@ -42,10 +42,21 @@ patch:
   # 26 键布局默认进入英文状态
   "preset_keyboards/qwerty/ascii_mode": 1
 
+  # 26 键中文（用于拼音反查）
+  "preset_keyboards/qwerty_cn":
+    name: "26 键中文"
+    __include: trime.yaml:preset_keyboards/qwerty
+    ascii_mode: 0
+
   # 按键功能定义
   "preset_keys/Keyboard_qwerty": # 切换至英文
     label: 英
     select: qwerty
+    send: Eisu_toggle
+
+  "preset_keys/Keyboard_qwerty_cn": # 切换至 26 键中文
+    label: 全
+    select: qwerty_cn
     send: Eisu_toggle
 
   "preset_keys/Mode_switch": # 切换回中文
