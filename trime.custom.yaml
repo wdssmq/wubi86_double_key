@@ -7,6 +7,7 @@ patch:
     ascii_mode: 0 # 默認進入中文狀態
     height: 60 # 每行高度
     width: 20 # 按鍵默認寬度（取所有按鍵中用得較多的寬度值，接下來就可以少寫一些 width了）
+    lock: true # 切換程序時記憶鍵盤
     keys: # 按鍵排列
       # 第一行
       - { label: "Q W", click: q, long_click: 1 }
@@ -105,7 +106,8 @@ patch:
 
     full_shape_button: &full_shape_button
       foreground:
-        option_styles: ["ic@moon_full", "ic@moon_new"]
+        # option_styles: ["ic@moon_new", "ic@moon_full"]
+        option_styles: ["半", "全"]
       action: Zenkaku_Hankaku
 
     # 右侧按钮列表（从右向左排列）
